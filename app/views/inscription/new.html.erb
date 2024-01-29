@@ -1,0 +1,18 @@
+<h1> Iscription to a Coworking Space </h1>
+
+<%= form_with url: inscription_path do |form| %>
+    <div class="mb-3">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: "form-control", placeholder: "name of the cowork" %>
+    </div>
+    
+    <div class="mb-3">
+        <%= form.label :email %>
+        <%= form.text_field :address, class: "form-control", placeholder: "your email" %>
+    </div>
+
+    <div class="mb-3">
+    <%=form.submit "Request Inscription", class: "btn btn-primary" %>
+    </div>
+
+<%end%>

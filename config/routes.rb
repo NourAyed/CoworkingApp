@@ -2,8 +2,14 @@ Rails.application.routes.draw do
 
   get "about-us", to: "about#index", as: :about
 
-  #get "cowork", to: "cowork#new", as:cowork
-  resources :coworks
+  get "coworks", to: "coworks#new"
+  post "coworks", to: "coworks#create"
+  delete "coworks", to: "coworks#destroy"
+  #resources :coworks
+
+  get "inscription", to: "inscription#new"
+  post "inscription", to: "inscription#create"
+  delete "inscription", to: "inscription#destroy"
 
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
