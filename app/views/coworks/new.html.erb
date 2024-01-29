@@ -1,0 +1,7 @@
+<h1> Create New Cowork </h1>
+
+<%= form_with(model: @cowork, url: coworkers_path, method: :post) do |form| %>
+    <%= form.text_field :name %>
+    <%= form.text_field :address %>
+    <%= form.submit 'Create Cowork' %>
+  <% end %>
